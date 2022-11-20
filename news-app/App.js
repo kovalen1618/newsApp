@@ -65,7 +65,7 @@ const Item = ({data}) => {
       data={ data }
       renderItem={({ item }) => 
         <View style={styles.itemContainer}>
-          <Image style={styles.itemImage} source={{ url: item.urlToImage }} />
+          <Image style={styles.itemImage} source={{ uri: item.urlToImage }} />
           <Text style={styles.itemTitle}>
             {item.title}
           </Text>
@@ -105,7 +105,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   itemBtn: {
-    flexDirection: 'row',
     backgroundColor: 'white'
   }
 });
